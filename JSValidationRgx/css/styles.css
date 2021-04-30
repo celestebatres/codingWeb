@@ -1,0 +1,13 @@
+.formulario p {
+  font-size: 15px;
+}
+
+.formulario input {
+  width: 300px;
+  height: 40px;
+}
+
+[data-validation-text] {
+  display: none;
+}
+/*# sourceMappingURL=styles.css.map */
