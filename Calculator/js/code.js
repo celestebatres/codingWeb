@@ -15,6 +15,10 @@ function borra(elemID){
     document.getElementById(elemID).innerHTML = strN;
 }
 
+/**
+ * todo 
+ * --- Crear una función que opere sin eval();
+ */
 function res(elemID){
     let op = document.getElementById(elemID).value;
 
