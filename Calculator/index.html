@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/code.js"></script>
     <title>Calculator</title>
   </head>
   <body>
-      <h1>Calculator!!</h1>
+      <h1>Batres Calculator!</h1>
     <div class="calculator">
-        <input type="text" placeholder=0 right>
+      <textarea  id="str" name="str"></textarea>
       <div class="teclas">
         
-        <button class="calc-button" type="button" id="seven">7</button>
-        <button class="calc-button" type="button" id="eight">8</button>
-        <button class="calc-button" type="button" id="nine">9</button>
-        <button class="calc-button is-clear" type="button" id="c">C</button>
+        <button class="calc-button" type="button" id="seven" onclick="insertText('str', '7')">7</button>
+        <button class="calc-button" type="button" id="eight" onclick="insertText('str', '8')">8</button>
+        <button class="calc-button" type="button" id="nine" onclick="insertText('str', '9')">9</button>
+        <button class="calc-button is-clear" type="button" id="c" onclick="borra('str')">DEL</button>
 
-        <button class="calc-button" type="button" id="four">4</button>
-        <button class="calc-button" type="button" id="five">5</button>
-        <button class="calc-button" type="button" id="six">6</button>
-        <button class="calc-button" type="button" id="mult">&times;</button>
-        <button class="calc-button" type="button" id="div">&div;</button>
+        <button class="calc-button" type="button" id="four" onclick="insertText('str', '4')">4</button>
+        <button class="calc-button" type="button" id="five" onclick="insertText('str', '5')">5</button>
+        <button class="calc-button" type="button" id="six" onclick="insertText('str', '6')">6</button>
+        <button class="calc-button" type="button" id="mult" onclick="insertText('str', '*')">&times;</button>
+        <button class="calc-button" type="button" id="div" onclick="insertText('str', '/')">&div;</button>
         
-        <button class="calc-button" type="button" id="one">1</button>
-        <button class="calc-button" type="button" id="two">2</button>
-        <button class="calc-button" type="button" id="three">3</button>
-        <button class="calc-button" type="button" id="plus">&plus;</button>
-        <button class="calc-button" type="button" id="minus">&minus;</button>
+        <button class="calc-button" type="button" id="one" onclick="insertText('str', '1')">1</button>
+        <button class="calc-button" type="button" id="two" onclick="insertText('str', '2')">2</button>
+        <button class="calc-button" type="button" id="three" onclick="insertText('str', '3')">3</button>
+        <button class="calc-button" type="button" id="plus" onclick="insertText('str', '+')">&plus;</button>
+        <button class="calc-button" type="button" id="minus" onclick="insertText('str', '-')">&minus;</button>
 
-        <button class="calc-button is-zero" type="button" id="zero">0</button>
-        <button class="calc-button" type="button" id="dot">.</button>
-        <button class="calc-button is-equals" type="button" id="equal">&equals;</button>
+        <button class="calc-button is-zero" type="button" id="zero" onclick="insertText('str', '0')">0</button>
+        <button class="calc-button" type="button" id="dot" onclick="insertText('str', '.')">.</button>
+        <button class="calc-button is-equals" type="button" id="equal" onclick="res('str')">&equals;</button>
       </div>
     </div>
   </body>

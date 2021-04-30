@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #c1d3f3;
+  background-color: #6b82aa;
   padding-bottom: 30px;
   padding-top: 30px;
   text-align: center;
@@ -20,7 +20,7 @@ body {
   border-radius: 5px;
 }
 
-.calculator input {
+.calculator textarea {
   background-color: #EEE;
   border: none;
   -webkit-box-shadow: none;
@@ -57,6 +57,10 @@ body {
   cursor: pointer;
 }
 
+.calc-button:hover {
+  background-color: #eeac55;
+}
+
 /* span across 3 columns */
 .is-zero,
 .is-equals,
@@ -66,5 +70,9 @@ body {
 
 .is-equals {
   background-color: #28D060;
+}
+
+.is-equals:hover {
+  background-color: #6eee99;
 }
 /*# sourceMappingURL=styles.css.map */

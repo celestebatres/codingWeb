@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: #c1d3f3;
+    background-color: #6b82aa;
     padding-bottom: 30px;
     padding-top: 30px;
     text-align: center;
@@ -19,7 +19,7 @@ body{
     border-radius: 5px;
 }
 
-.calculator input{
+.calculator textarea{
     background-color: #EEE;
     border: none;
     box-shadow: none;
@@ -52,6 +52,11 @@ body{
     border-radius: 5px; 
     font-size: 22px;
     cursor: pointer;
+    
+}
+
+.calc-button:hover{
+    background-color:#eeac55;
 }
 
 /* span across 3 columns */
@@ -63,4 +68,8 @@ body{
 
 .is-equals{
     background-color: #28D060;
+}
+
+.is-equals:hover{
+    background-color: #6eee99;
 }
