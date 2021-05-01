@@ -1,3 +1,13 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(255, 232, 232);
+}
+
 .formulario p{
     font-size: 15px;
 }
@@ -7,6 +17,18 @@
     height: 40px;
 }
 
-[data-validation-text] {
-	display: none;
+.formulario {
+    border-radius: 5px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    max-width: 70%;
+    padding: 20px;
+}
+
+.formulario input{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid rgb(250, 180, 180);
+    font-size: 20px;
+    width: 70%;
 }
