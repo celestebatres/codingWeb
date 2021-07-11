@@ -1,4 +1,62 @@
-body {
+* {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  --color_pri: rgb(171, 166, 233);
+}
+
+body {
+  background-color: var(--color_pri);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px;
+}
+
+.container input {
+  background-color: var(--color_pri);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  border-bottom: 2px solid #111;
+  text-align: center;
+  margin: 10px;
+  font-size: 40px;
+}
+
+.container textarea {
+  background-color: var(--color_pri);
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  text-align: center;
+  margin: 10px;
+  font-size: 40px;
+}
+
+#btnCalcular {
+  font-size: 20px;
+  background-color: #b094b8;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
