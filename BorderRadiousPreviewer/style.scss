@@ -1,0 +1,16 @@
+*{
+    --color-scrollbar: #DDD;
+}
+
+.esquema{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cuadro{
+    background-color: aquamarine;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+}
