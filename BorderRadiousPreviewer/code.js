@@ -1,23 +1,25 @@
+//Ambos: JavaScript y jQuery
+
 let topLeft, topRight, bottomLeft, bottomRight;
 
 function updateTopLeftInput(val) {
     topLeft = val;
-    document.getElementById('topLeftShow').value = "border-top-left-radius: " + val + "%"; 
+    document.getElementById('topLeftShow').value = "border-top-left-radius: " + val + "%;"; 
 }
 
 function updateTopRightInput(val) {
     topRight = val;
-    document.getElementById('topRightShow').value=val; 
+    document.getElementById('topRightShow').value = "border-top-right-radius: " + val + "%;"; 
 }
 
 function updateBottomLeftInput(val) {
     bottomLeft = val;
-    document.getElementById('bottomLeftShow').value=val; 
+    document.getElementById('bottomLeftShow').value = "border-bottom-left-radius: " + val + "%;"; 
 }
 
 function updateBottomRightInput(val) {
     bottomRight = val;
-    document.getElementById('bottomRightShow').value=val; 
+    document.getElementById('bottomRightShow').value = "border-bottom-right-radius: " + val + "%;"; 
 }
 
 $(function(){

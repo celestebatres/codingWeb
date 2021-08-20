@@ -1,5 +1,11 @@
 * {
   --color-scrollbar: #DDD;
+  text-align: center;
+}
+
+#warning {
+  font-size: x-large;
+  color: red;
 }
 
 .esquema {
@@ -18,11 +24,31 @@
           flex-direction: column;
 }
 
+.rango {
+  margin-top: 15px;
+}
+
 .cuadro {
   background-color: aquamarine;
   width: 400px;
   height: 400px;
   margin: 20px;
-  border-radius: 10% 30% 50% 70%;
+  border-radius: 10% 10% 10% 100%;
+}
+
+input {
+  width: 250px;
+}
+
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */
