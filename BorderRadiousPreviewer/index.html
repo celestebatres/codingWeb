@@ -12,33 +12,33 @@
 <body>
     <div class="esquema">
         <div class="cuadro"></div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<input type="range" id="rangeInput" name="rangeInput" step="1" min="1" max="4">
-<label id="rangeText" />
-        <!-- <input type="range" list="tickmarks" autocomplete="off">
-        <input type="range" list="tickmarks" autocomplete="off">
-        <input type="range" list="tickmarks" autocomplete="off">
-        <input type="range" list="tickmarks" autocomplete="off">
-
-        <datalist id="tickmarks">
-            <option value="0" label="0%">
-            <option value="10">
-            <option value="20">
-            <option value="30">
-            <option value="40">
-            <option value="50" label="50%">
-            <option value="60">
-            <option value="70">
-            <option value="80">
-            <option value="90">
-            <option value="100" label="100%">
-        </datalist> -->
-
+        <div class="rango">
+            <p>top-left</p>
+            <input type="range" name="topLeftInput" id="topLeftInput" min="0" max="100" onchange="updateTopLeftInput(this.value);">
+            <input type="text" id="topLeftShow" value="" disabled>
+        </div>  
+        <div class="rango">
+            <p>top-right</p>
+            <input type="range" name="topRightInput" id="topRightInput" min="0" max="100" onchange="updateTopRightInput(this.value);">
+            <input type="text" id="topRightShow" value="" disabled>
+        </div>  
+        <div class="rango">
+            <p>bottom-left</p>
+            <input type="range" name="bottomLeftInput" id="bottomLeftInput" min="0" max="100" onchange="updateBottomLeftInput(this.value);">
+            <input type="text" id="bottomLeftShow" value="" disabled>
+        </div>  
+        <div class="rango">
+            <p>bottom-right</p>
+            <input type="range" name="bottomRightInput" id="bottomRightInput" min="0" max="100" onchange="updateBottomRightInput(this.value);">
+            <input type="text" id="bottomRightShow" value="" disabled>
+        </div>              
+        
         <div class="args">
             <input type="text" value="" disabled>
             <button onClick="copy()">Copy to Clipboard</button>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="./code.js"></script>
 </body>
 

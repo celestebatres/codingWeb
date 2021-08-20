@@ -1,20 +1,39 @@
-var rangeValues =
-{
-    "1": "You've selected option 1!",
-    "2": "...and now option 2!",
-    "3": "...stackoverflow rocks for 3!",
-    "4": "...and a custom label 4!"
-};
+let topLeft, topRight, bottomLeft, bottomRight;
 
+function updateTopLeftInput(val) {
+    topLeft = val;
+    document.getElementById('topLeftShow').value = "border-top-left-radius: " + val + "%"; 
+}
 
-$(function () {
+function updateTopRightInput(val) {
+    topRight = val;
+    document.getElementById('topRightShow').value=val; 
+}
 
-    // on page load, set the text of the label based the value of the range
-    $('#rangeText').text(rangeValues[$('#rangeInput').val()]);
+function updateBottomLeftInput(val) {
+    bottomLeft = val;
+    document.getElementById('bottomLeftShow').value=val; 
+}
 
-    // setup an event handler to set the text when the range value is dragged (see event for input) or changed (see event for change)
-    $('#rangeInput').on('input change', function () {
-        $('#rangeText').text(rangeValues[$(this).val()]);
+function updateBottomRightInput(val) {
+    bottomRight = val;
+    document.getElementById('bottomRightShow').value=val; 
+}
+
+$(function(){
+    $("#topLeftInput").click(function (){
+        $(".cuadro").css("border-top-left-radius", ""+topLeft+"%");
     });
 
+    $("#topRightInput").click(function (){
+        $(".cuadro").css("border-top-right-radius", ""+topRight+"%");
+    });
+
+    $("#bottomRightInput").click(function (){
+        $(".cuadro").css("border-bottom-right-radius", ""+bottomRight+"%");
+    });
+
+    $("#bottomLeftInput").click(function (){
+        $(".cuadro").css("border-bottom-left-radius", ""+bottomLeft+"%");
+    });
 });
