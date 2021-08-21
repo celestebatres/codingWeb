@@ -1,25 +1,33 @@
 //Ambos: JavaScript y jQuery
 
-let topLeft, topRight, bottomLeft, bottomRight;
+let topLeft = 10, topRight = 10, bottomLeft = 100, bottomRight = 10, code;
 
 function updateTopLeftInput(val) {
     topLeft = val;
     document.getElementById('topLeftShow').value = "border-top-left-radius: " + val + "%;"; 
+    code = "border-radius: " + topLeft + "% " + topRight + "% " + bottomRight + "% " + bottomLeft + "%;";
+    document.getElementById('code').value = code;
 }
 
 function updateTopRightInput(val) {
     topRight = val;
     document.getElementById('topRightShow').value = "border-top-right-radius: " + val + "%;"; 
+    code = "border-radius: " + topLeft + "% " + topRight + "% " + bottomRight + "% " + bottomLeft + "%;";
+    document.getElementById('code').value = code;
 }
 
 function updateBottomLeftInput(val) {
     bottomLeft = val;
     document.getElementById('bottomLeftShow').value = "border-bottom-left-radius: " + val + "%;"; 
+    code = "border-radius: " + topLeft + "% " + topRight + "% " + bottomRight + "% " + bottomLeft + "%;";
+    document.getElementById('code').value = code;
 }
 
 function updateBottomRightInput(val) {
     bottomRight = val;
     document.getElementById('bottomRightShow').value = "border-bottom-right-radius: " + val + "%;"; 
+    code = "border-radius: " + topLeft + "% " + topRight + "% " + bottomRight + "% " + bottomLeft + "%;";
+    document.getElementById('code').value = code;
 }
 
 $(function(){
