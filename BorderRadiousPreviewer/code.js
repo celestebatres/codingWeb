@@ -47,3 +47,10 @@ $(function(){
         $(".cuadro").css("border-bottom-left-radius", ""+bottomLeft+"%");
     });
 });
+
+function copy(id){
+    let copy = document.getElementById(id);
+    copy.select();
+    copy.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copy.value);
+}

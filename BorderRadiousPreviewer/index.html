@@ -17,29 +17,29 @@
                 <p>top-left</p>
                 <input type="range" name="topLeftInput" id="topLeftInput" min="0" max="100" value="10" onchange="updateTopLeftInput(this.value);">
                 <input type="text" id="topLeftShow" value="border-top-left-radius: 10%;" disabled>
-                <button onClick="copy()">Copy to Clipboard</button>
+                <button onClick="copy('topLeftShow')">Copy to Clipboard</button>
             </div>  
             <div class="rango">
                 <p>top-right</p>
                 <input type="range" name="topRightInput" id="topRightInput" min="0" max="100" value="10" onchange="updateTopRightInput(this.value);">
                 <input type="text" id="topRightShow" value="border-top-right-radius: 10%;" disabled>
-                <button onClick="copy()">Copy to Clipboard</button>
+                <button onClick="copy('topRightShow')">Copy to Clipboard</button>
             </div>  
             <div class="rango">
                 <p>bottom-right</p>
                 <input type="range" name="bottomRightInput" id="bottomRightInput" min="0" max="100" value="10" onchange="updateBottomRightInput(this.value);">
                 <input type="text" id="bottomRightShow" value="border-bottom-right-radius: 10%;" disabled>
-                <button onClick="copy()">Copy to Clipboard</button>
+                <button onClick="copy('bottomRightShow')">Copy to Clipboard</button>
             </div>
             <div class="rango">
                 <p>bottom-left</p>
                 <input type="range" name="bottomLeftInput" id="bottomLeftInput" min="0" max="100" value="100" onchange="updateBottomLeftInput(this.value);">
                 <input type="text" id="bottomLeftShow" value="border-bottom-left-radius: 100%;" disabled>
-                <button onClick="copy()">Copy to Clipboard</button>
+                <button onClick="copy('bottomLeftShow')">Copy to Clipboard</button>
             </div>  
             <div class="rango">
                 <input type="text" id="code" value="border-radius: 10% 10% 10% 100%;" disabled>
-                <button onClick="copy()">Copy to Clipboard</button>
+                <button onClick="copy('code')">Copy to Clipboard</button>
             </div>
         </div>
         <div class="cuadro" id="cuadro"></div>
